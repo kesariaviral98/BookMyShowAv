@@ -13,9 +13,7 @@ app.use("/app/v1/users", userRouter);
 app.use("/app/v1/users/admin", movieRouter);
 app.use("/app/v1/users/theatres", theatreRouter);
 app.use("/app/v1/users/bookings", bookingRouter);
-app.get("/", (req, res) => {
-    res.send("hello world");
-  });
+
 
 app.listen(process.env.PORT, () => {
     console.log(`server is listening to port no ${process.env.PORT}`);
