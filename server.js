@@ -7,7 +7,7 @@ const movieRouter = require("./routes/movieRouter");
 const theatreRouter = require("./routes/theatreRouter");
 const bookingRouter = require("./routes/bookingRouter");
 
-app.use(express.static("./public"));
+app.use(express.static("./build"));
 app.use(express.json());
 app.use("/app/v1/users", userRouter);
 app.use("/app/v1/users/admin", movieRouter);
